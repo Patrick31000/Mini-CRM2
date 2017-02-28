@@ -1,38 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <title>Mini CRM</title>
-
+    <title>Mini CRM 2.0</title>
 </head>
 
 <body>
-
-    <div id="Données">
-
-    </div>
-    <br>
-
-    <div id="formulaire">
-
-        <form id="general" action="crm.json" method="post">
-            <input type="text" id="id" name="champ1" value="Id"><br>
-            <input type="text" id="first_name" name="first_name" value=""><br>
-            <input type="text" id="last_name" name="champ1" value=""><br>
-            <input type="text" id="company" name="champ1" value="Entreprise"><br>
-            <input type="text" id="role" name="champ1" value="Emploi"><br>
-            <input type="text" id="phone" name="champ1" value="Téléphone"><br>
-            <input type="text" id="email" name="champ1" value="Mail"><br>
-            <input type="text" id="description" name="champ1" value="Description"><br>
-        </form><br>
-
-        <input type="submit" id="envoyer" value="Envoyer" />
-
-    </div>
-    <script type="text/javascript" src="/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="/index.js"></script>
+    <a href="inscription.html">Inscription</a><br />
+    <select id="deroul">
+		<option selected>Tu choisis qui?</option>
+	</select>
+    <span id="receiver"></span>
+    <!-- <form action="submit" id="form">
+		<input type="text" placeholder="name">
+		<input type="text" placeholder="last-name">
+		<input type="text" placeholder="role">
+		<input type="text" placeholder="E-mail">
+	</form><br> 
+	<button id="submit">Submit</button>-->
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
